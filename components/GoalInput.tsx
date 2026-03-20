@@ -5,10 +5,14 @@ export default function GoalInput({ dailyGoal, setDailyGoal }: {
 }) {
     //base di ore lavorative
     return(
-        <input
-                type="number"
-                value={dailyGoal}
-                onChange={(e) => setDailyGoal(Number(e.target.value))}
-            />
+        <div className="field">
+        <label className="section-label">Daily Goal (hrs)</label>
+            <input
+                    type="number"
+                    value={dailyGoal}
+                    onChange={(e) => setDailyGoal(Number(e.target.value))}
+                />
+            
+        </div>
     )
 }

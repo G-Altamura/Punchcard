@@ -1,0 +1,180 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+/* ===== LAYOUT ===== */
+
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+  background: var(--bg);
+  box-sizing: border-box;
+}
+
+.app-title {
+  font-family: var(--mono);
+  font-size: 2.5rem;
+  color: var(--text-h);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+/* ===== CARD (il cartellino) ===== */
+.card {
+    flex: 1;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 2rem 3rem;
+  position: relative;
+}
+.holes-strip {
+  width: 24px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.hole {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* separatori tratteggiati */
+.divider {
+  border: none;
+  border-top: 1px dashed var(--border);
+  margin: 1.5rem 0;
+}
+
+/* ===== TIMER ===== */
+.timer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.timer-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin: 1rem;
+}
+
+.timer-display {
+  font-size: 3.5rem;
+  letter-spacing: 0.1em;
+  color: var(--text-h);
+  margin: 0.5rem 0 1.5rem;
+}
+
+.btn-primary {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ===== MANUAL ENTRY ===== */
+.manual-entry {
+  padding: 1rem 0;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.entry-fields {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.field label {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.field input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  font-family: var(--mono);
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 70px;
+  text-align: center;
+}
+
+/* ===== MESSAGE ===== */
+.message {
+  text-align: center;
+  font-style: italic;
+  color: var(--text);
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+/* ===== PUNCH LOG ===== */
+.punch-log {
+  text-align: center;
+  font-style: italic;
+  color: var(--text);
+  font-size: 0.85rem;
+  padding: 1rem 0;
+}
+
+.log-entry {
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed var(--border);
+}
