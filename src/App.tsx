@@ -23,13 +23,13 @@ function App() {
     {Array.from({length: 15}).map((_, i) => <div key={i} className="hole" />)}
   </div>
   <div className="card">
+    <GoalInput dailyGoal={dailyGoal} setDailyGoal={setDailyGoal} />
+    <hr className="divider" />    
     <Timer seconds={seconds} setElapsed={setElapsed} setLog={setLog} />
     <hr className="divider" />
-    <GoalInput dailyGoal={dailyGoal} setDailyGoal={setDailyGoal} />
+    <PunchLog log={log} />
     <hr className="divider" />
     <Message seconds={seconds} dailyGoal={dailyGoal} />
-    <hr className="divider" />
-    <PunchLog log={log} />
     <hr className="divider" />
     <ManualEntry setElapsed={setElapsed} setLog={setLog}/>
   </div>
